@@ -1,0 +1,123 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fc;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Container for each page */
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+/* Centered Flexbox layout for the pages */
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+/* Skills Section */
+.skills-section {
+  background-color: #f4f7fa;
+  padding: 50px 0;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+/* List Styling */
+.skill-column ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.skill-column li {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  color: #333;
+  transition: transform 0.3s ease;
+}
+
+.skill-column li:hover {
+  transform: translateX(10px);
+}
+
+.skill-icon {
+  color: #007bff;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.skill-column li:hover .skill-icon {
+  color: #0056b3;
+}
+
+/* Responsive Grid */
+@media (max-width: 768px) {
+  .skill-column {
+    flex: 1 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Styling for Flexbox */
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+.mb-3 {
+  margin-bottom: 1rem;
+}
+
+/* Adding space between skill icons and text */
+.skill-column span {
+  font-weight: bold;
+  color: #333;
+}
